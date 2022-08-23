@@ -1,0 +1,35 @@
+Now you have to study the topic of a self-correcting message on the example of Hamming codes. Sadly, but no, you don't have to yet. Let's leave it for the next time.
+
+For now let's take another look at that sequence:
+
+0x1c0x2d0x3e(0x4c *suddenly*)
+
+** hex -> **
+
+yields:
+
+.->L
+
+As you can easily guess, a point at the beginning can represent coordinates. Probably discrete set of known data points. (Looking ahead, I'll clarify that this is a witch of Agnesi curve)
+y = (a^3)/(a^2 + x^2), a = 3 (Number of days between our birthdays)
+
+Set of data points:
+  x    f(x)
+-10    0.25
+-5     0.8
+ 0      3
+ 5     0.8
+ 10    0.25
+
+But what does this letter 'L' stand for this time?
+.->Lagrange polynomial
+
+You should get Interpolation polynomial in the Lagrange form using this set of points of the above-mentioned curve.
+
+After you get a polynomial, you should calculate f(x), x = (3 2003 2000) = 320032000
+
+You should get negative number.
+
+Than you can get IV for the AES-128 converting this number to hex.
+Now it remains to get the key and it will be possible to decrypt the message.
+
